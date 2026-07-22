@@ -1,13 +1,13 @@
 export class EventBus {
-  #handlers = new Map();
+  #events = new Map();
 
-  on(event, handler) {
-    if (!this.#handlers.has(event)) this.#handlers.set(event, new Set());
-    this.#handlers.get(event).add(handler);
-    return () => this.#handlers.get(event)?.delete(handler);
+  on(name, handler) {
+    if (!this.#events.has(name)) this.#events.set(name, new Set());
+    this.#events.get(name).add(handler);
+    return () => this.#events.get(name)?.delete(handler);
   }
 
-  emit(event, payload) {
-    this.#handlers.get(event)?.forEach(handler => handler(payload));
+  emit(name, payload) {
+    this.#events.get(name)?.forEach(handler => handler(payload));
   }
 }

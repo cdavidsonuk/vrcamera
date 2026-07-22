@@ -1,0 +1,57 @@
+{
+  "DIAL_MODE": {
+    "asset": "mode-dial",
+    "type": "rotary",
+    "action": "cycleMode"
+  },
+  "DIAL_REAR": {
+    "asset": "rear-wheel",
+    "type": "rotary",
+    "action": "adjustAperture"
+  },
+  "BTN_SHUTTER": {
+    "asset": "shutter-button",
+    "type": "twoStage",
+    "action": "focusThenCapture"
+  },
+  "JOY_FOCUS": {
+    "asset": "joystick",
+    "type": "joystick",
+    "action": "moveFocusPoint"
+  },
+  "BTN_AFON": {
+    "asset": "af-on-button",
+    "type": "button",
+    "action": "autofocus"
+  },
+  "BTN_Q": {
+    "asset": "q-button",
+    "type": "button",
+    "action": "openQuickMenu"
+  },
+  "BTN_LIVE": {
+    "asset": "live-button",
+    "type": "button",
+    "action": "toggleLiveView"
+  },
+  "BTN_MENU": {
+    "asset": "menu-button",
+    "type": "button",
+    "action": "openMenu"
+  },
+  "BTN_INFO": {
+    "asset": "info-button",
+    "type": "button",
+    "action": "toggleInfo"
+  },
+  "BTN_PLAY": {
+    "asset": "play-button",
+    "type": "button",
+    "action": "openPlayback"
+  },
+  "BTN_DELETE": {
+    "asset": "delete-button",
+    "type": "button",
+    "action": "deleteOrClose"
+  }
+}

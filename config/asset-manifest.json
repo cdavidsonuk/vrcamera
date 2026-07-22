@@ -1,0 +1,134 @@
+{
+  "body": {
+    "file": "assets/body/camera-body-composite.png",
+    "source_rect": [
+      270,
+      220,
+      1135,
+      825
+    ]
+  },
+  "controls": {
+    "mode-dial": {
+      "file": "assets/controls/mode-dial.png",
+      "source_rect": [
+        300,
+        330,
+        455,
+        485
+      ],
+      "control_id": "DIAL_MODE",
+      "shape": "ellipse"
+    },
+    "rear-wheel": {
+      "file": "assets/controls/rear-wheel.png",
+      "source_rect": [
+        845,
+        545,
+        1025,
+        725
+      ],
+      "control_id": "DIAL_REAR",
+      "shape": "ellipse"
+    },
+    "shutter-button": {
+      "file": "assets/controls/shutter-button.png",
+      "source_rect": [
+        950,
+        320,
+        1085,
+        415
+      ],
+      "control_id": "BTN_SHUTTER",
+      "shape": "ellipse"
+    },
+    "joystick": {
+      "file": "assets/controls/joystick.png",
+      "source_rect": [
+        875,
+        445,
+        975,
+        545
+      ],
+      "control_id": "JOY_FOCUS",
+      "shape": "ellipse"
+    },
+    "af-on-button": {
+      "file": "assets/controls/af-on-button.png",
+      "source_rect": [
+        865,
+        390,
+        990,
+        455
+      ],
+      "control_id": "BTN_AFON",
+      "shape": "roundrect"
+    },
+    "q-button": {
+      "file": "assets/controls/q-button.png",
+      "source_rect": [
+        885,
+        500,
+        970,
+        585
+      ],
+      "control_id": "BTN_Q",
+      "shape": "ellipse"
+    },
+    "live-button": {
+      "file": "assets/controls/live-button.png",
+      "source_rect": [
+        870,
+        700,
+        1015,
+        785
+      ],
+      "control_id": "BTN_LIVE",
+      "shape": "roundrect"
+    },
+    "menu-button": {
+      "file": "assets/controls/menu-button.png",
+      "source_rect": [
+        325,
+        445,
+        440,
+        515
+      ],
+      "control_id": "BTN_MENU",
+      "shape": "roundrect"
+    },
+    "info-button": {
+      "file": "assets/controls/info-button.png",
+      "source_rect": [
+        325,
+        505,
+        440,
+        575
+      ],
+      "control_id": "BTN_INFO",
+      "shape": "roundrect"
+    },
+    "play-button": {
+      "file": "assets/controls/play-button.png",
+      "source_rect": [
+        330,
+        565,
+        425,
+        660
+      ],
+      "control_id": "BTN_PLAY",
+      "shape": "ellipse"
+    },
+    "delete-button": {
+      "file": "assets/controls/delete-button.png",
+      "source_rect": [
+        330,
+        620,
+        425,
+        715
+      ],
+      "control_id": "BTN_DELETE",
+      "shape": "ellipse"
+    }
+  }
+}

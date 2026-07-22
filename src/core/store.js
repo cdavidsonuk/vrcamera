@@ -3,21 +3,19 @@ export function createStore(initialState) {
   const listeners = new Set();
 
   return {
-    getState() {
-      return structuredClone(state);
-    },
+    getState: () => structuredClone(state),
     setState(patch) {
       state = { ...state, ...patch };
-      listeners.forEach(listener => listener(this.getState()));
+      listeners.forEach(fn => fn(structuredClone(state)));
     },
     reset() {
       state = structuredClone(initialState);
-      listeners.forEach(listener => listener(this.getState()));
+      listeners.forEach(fn => fn(structuredClone(state)));
     },
-    subscribe(listener) {
-      listeners.add(listener);
-      listener(this.getState());
-      return () => listeners.delete(listener);
+    subscribe(fn) {
+      listeners.add(fn);
+      fn(structuredClone(state));
+      return () => listeners.delete(fn);
     }
   };
 }
