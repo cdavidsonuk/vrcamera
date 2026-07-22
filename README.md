@@ -1,13 +1,30 @@
-# PhotographyCourses Pro Camera — Phase C
+# PhotographyCourses Pro Camera — Phase A GitHub Build
 
-This is an upload-ready GitHub Pages package.
+## Upload to GitHub Pages
 
-Upload the contents of this folder so that `index.html`, `src`, `assets`, `config` and `docs` are directly in the repository root.
+Upload these items directly into the root of your repository:
 
-For local testing:
+- `index.html`
+- `assets/`
+- `src/`
+- `docs/`
+- `README.md`
 
-```bash
-python -m http.server 8080
-```
+Do not upload the containing folder itself.
 
-Then open `http://localhost:8080`.
+## Important
+
+The current artwork is a production presentation sheet. It is not yet a set of
+separate transparent camera layers. This package makes the artwork publishable
+on GitHub Pages, but the next production step is to export:
+
+- body base
+- LCD mask
+- body highlights
+- mode dial
+- rear wheel
+- power switch
+- shutter button
+- individual rear buttons
+
+Those files will then replace the single presentation image in the interactive simulator.
