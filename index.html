@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PhotographyCourses Pro Camera — Sprint 1</title>
+  <link rel="stylesheet" href="./src/styles/app.css">
+</head>
+<body>
+  <main id="app" class="app-shell" aria-label="PhotographyCourses virtual camera">
+    <header class="app-header">
+      <div>
+        <strong>PHOTOGRAPHYCOURSES.COM</strong>
+        <span>PRO CAMERA · SPRINT 1</span>
+      </div>
+      <div id="buildStatus" class="build-status">Architecture milestone</div>
+    </header>
+
+    <section class="workspace">
+      <aside class="panel panel-left">
+        <h2>Camera status</h2>
+        <dl id="statusList"></dl>
+        <button class="ui-action" data-action="reset">Reset camera</button>
+      </aside>
+
+      <section class="camera-stage">
+        <div class="camera-body" id="cameraBody">
+          <div class="top-plate">
+            <button id="DIAL_MODE" class="mode-dial control" aria-label="Change shooting mode">
+              <span id="modeLabel">M</span>
+            </button>
+            <button id="SW_POWER" class="power-switch control" aria-pressed="false">
+              <span>OFF</span><i></i><span>ON</span>
+            </button>
+            <div class="hot-shoe" aria-hidden="true"></div>
+            <button id="BTN_SHUTTER" class="shutter control" aria-label="Shutter button"></button>
+          </div>
+
+          <div class="viewfinder">
+            <div class="viewfinder-glass"></div>
+          </div>
+
+          <div class="left-controls">
+            <button id="BTN_MENU" class="camera-button control">MENU</button>
+            <button id="BTN_INFO" class="camera-button control">INFO</button>
+            <button id="BTN_PLAY" class="camera-button control">▶</button>
+            <button id="BTN_DELETE" class="camera-button control">⌫</button>
+          </div>
+
+          <section id="lcd" class="lcd" aria-live="polite">
+            <div id="bootScreen" class="boot-screen">
+              <strong>PHOTOGRAPHYCOURSES</strong>
+              <span>PRO CAMERA OS</span>
+            </div>
+            <div id="shootingScreen" class="shooting-screen hidden">
+              <div class="lcd-top">
+                <span id="lcdMode">M</span>
+                <span id="lcdFocusMode">AF-S</span>
+                <span id="lcdFrames">999</span>
+              </div>
+              <div class="focus-grid" id="focusGrid">
+                <button id="focusPoint" aria-label="Focus point"></button>
+              </div>
+              <div class="lcd-bottom">
+                <span id="lcdShutter">1/250</span>
+                <span id="lcdAperture">F4.0</span>
+                <span class="meter">−3 · −2 · −1 · 0 · +1 · +2 · +3</span>
+                <span id="lcdIso">ISO 100</span>
+              </div>
+            </div>
+            <div id="menuScreen" class="menu-screen hidden"></div>
+            <div id="playbackScreen" class="playback-screen hidden">
+              <div class="playback-placeholder">No photographs captured yet</div>
+            </div>
+          </section>
+
+          <div class="right-controls">
+            <button id="BTN_AFON" class="camera-button control">AF-ON</button>
+            <button id="JOY_FOCUS" class="joystick control" aria-label="Move focus point"></button>
+            <button id="BTN_Q" class="camera-button control">Q</button>
+            <button id="DIAL_REAR" class="rear-dial control" aria-label="Rear command dial">
+              <span id="rearDialTicks"></span>
+              <b>SET</b>
+            </button>
+            <button id="BTN_LIVE" class="camera-button live-button control">LIVE</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel panel-right">
+        <h2>Controls</h2>
+        <p>Use the camera controls or keyboard shortcuts.</p>
+        <div class="shortcut-list">
+          <span><kbd>P</kbd> Power</span>
+          <span><kbd>M</kbd> Mode</span>
+          <span><kbd>←</kbd><kbd>→</kbd> Rear dial</span>
+          <span><kbd>Space</kbd> Shutter</span>
+          <span><kbd>Esc</kbd> Close menu</span>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
