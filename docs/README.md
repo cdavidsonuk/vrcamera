@@ -1,11 +1,7 @@
-# Realistic Artwork Replacement
+# Premium Crisp Build
 
-This package replaces the simplified SVG camera with the realistic rear-camera artwork that was previously approved.
+This build removes low-resolution AI-generated lettering from the camera artwork.
 
-Upload the contents of this folder to the root of the GitHub Pages repository:
-- index.html
-- assets/
-- src/
-- docs/
+All labels, dial markings, button names and branding are rendered by the browser, so they remain sharp at any display size. The camera shell is a scalable SVG rather than a cropped raster image.
 
-The live LCD and invisible control hotspots are positioned over the realistic camera artwork.
+Upload index.html, assets/, src/ and docs/ directly to the repository root.

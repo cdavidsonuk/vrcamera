@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1080">
+<defs>
+ <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#545a60"/><stop offset=".18" stop-color="#2b3035"/><stop offset=".72" stop-color="#14171a"/><stop offset="1" stop-color="#07090b"/></linearGradient>
+ <linearGradient id="top" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#686e74"/><stop offset=".35" stop-color="#31363b"/><stop offset="1" stop-color="#111417"/></linearGradient>
+ <radialGradient id="button" cx=".36" cy=".28" r=".78"><stop stop-color="#73797e"/><stop offset=".27" stop-color="#3a3f44"/><stop offset=".7" stop-color="#171a1d"/><stop offset="1" stop-color="#050708"/></radialGradient>
+ <pattern id="grip" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#16191c"/><circle cx="3" cy="3" r="1.2" fill="#383d42"/><circle cx="9" cy="8" r="1.1" fill="#090b0d"/></pattern>
+ <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="28" flood-opacity=".8"/></filter>
+</defs>
+<g filter="url(#shadow)">
+ <path d="M110 230Q125 115 280 100H500L570 30H1030L1100 100H1320Q1470 115 1490 275V870Q1470 1015 1325 1030H225Q90 1010 85 875Z" fill="#000"/>
+</g>
+<path d="M110 230Q125 115 280 100H500L570 30H1030L1100 100H1320Q1470 115 1490 275V870Q1470 1015 1325 1030H225Q90 1010 85 875Z" fill="url(#body)" stroke="#080a0c" stroke-width="20"/>
+<path d="M1320 175Q1480 210 1510 360V825Q1490 980 1340 1020Q1265 925 1275 770V315Q1280 220 1320 175Z" fill="url(#grip)" stroke="#090b0d" stroke-width="12"/>
+<path d="M100 255Q280 120 560 135H1060Q1330 125 1490 270L1460 365H125Z" fill="url(#top)"/>
+<path d="M675 38H925L965 130H635Z" fill="#15181b" stroke="#858b90" stroke-width="10"/>
+<rect x="710" y="55" width="180" height="46" rx="5" fill="#9ba0a4"/><rect x="735" y="59" width="130" height="38" fill="#25292d"/>
+<path d="M620 150Q665 82 730 80H870Q935 82 980 150L1005 300H595Z" fill="#121518" stroke="#454b50" stroke-width="16"/>
+<rect x="680" y="142" width="240" height="122" rx="28" fill="#050607" stroke="#0e1114" stroke-width="22"/><rect x="720" y="170" width="160" height="66" rx="8" fill="#2e3150"/>
+<rect x="390" y="360" width="770" height="510" rx="28" fill="#101316" stroke="#5b6268" stroke-width="10"/><rect x="430" y="400" width="690" height="430" rx="10" fill="#010304"/>
+<!-- blank physical controls, labels are HTML -->
+<circle cx="245" cy="285" r="105" fill="url(#button)" stroke="#858b90" stroke-width="11"/><circle cx="245" cy="285" r="78" fill="#1e2226" stroke="#090b0c" stroke-width="7"/>
+<rect x="430" y="205" width="120" height="46" rx="24" fill="#111417" stroke="#747a80" stroke-width="5"/><circle cx="455" cy="228" r="18" fill="#c3c7ca"/>
+<ellipse cx="1360" cy="218" rx="70" ry="34" fill="#a3a8ac" stroke="#ecedef" stroke-width="7"/><ellipse cx="1360" cy="216" rx="50" ry="22" fill="url(#button)"/>
+<g fill="url(#button)" stroke="#767c81" stroke-width="5">
+ <rect x="185" y="425" width="120" height="58" rx="13"/><rect x="185" y="515" width="120" height="58" rx="13"/>
+ <circle cx="245" cy="635" r="37"/><circle cx="245" cy="745" r="37"/>
+ <rect x="1225" y="335" width="120" height="53" rx="13"/><circle cx="1285" cy="470" r="38"/><circle cx="1285" cy="570" r="34"/>
+ <circle cx="1285" cy="735" r="112"/><circle cx="1285" cy="735" r="53"/>
+ <rect x="1208" y="900" width="155" height="62" rx="15"/>
+</g>
+<circle cx="1285" cy="735" r="83" fill="none" stroke="#aab0b5" stroke-width="17" stroke-dasharray="6 9"/>
+<path d="M145 245Q350 120 540 145M1100 150Q1350 160 1450 300" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="13" stroke-linecap="round"/>
+</svg>
