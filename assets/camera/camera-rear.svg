@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1460 1070">
+<defs>
+ <linearGradient id="b" x2="1" y2="1"><stop stop-color="#4b5157"/><stop offset=".35" stop-color="#292e33"/><stop offset="1" stop-color="#0c0f12"/></linearGradient>
+ <linearGradient id="t" y2="1"><stop stop-color="#5c6268"/><stop offset=".55" stop-color="#252a2f"/><stop offset="1" stop-color="#101316"/></linearGradient>
+ <radialGradient id="d"><stop stop-color="#747a80"/><stop offset=".35" stop-color="#30353a"/><stop offset="1" stop-color="#090b0d"/></radialGradient>
+ <pattern id="g" width="13" height="13" patternUnits="userSpaceOnUse"><rect width="13" height="13" fill="#171a1d"/><circle cx="3" cy="3" r="1.2" fill="#34393e"/><circle cx="9" cy="9" r="1" fill="#080a0c"/></pattern>
+ <filter id="s"><feDropShadow dx="0" dy="26" stdDeviation="25" flood-opacity=".75"/></filter>
+</defs>
+<path filter="url(#s)" d="M105 230Q125 120 255 105H475L540 35H920L985 105H1225Q1355 125 1370 260V870Q1355 1000 1230 1020H215Q95 995 90 875Z" fill="#000"/>
+<path d="M105 230Q125 120 255 105H475L540 35H920L985 105H1225Q1355 125 1370 260V870Q1355 1000 1230 1020H215Q95 995 90 875Z" fill="url(#b)" stroke="#07090b" stroke-width="18"/>
+<path d="M1240 175Q1385 205 1390 350V830Q1380 970 1245 1010Q1185 910 1192 760V300Q1195 225 1240 175Z" fill="url(#g)" stroke="#090b0d" stroke-width="10"/>
+<path d="M105 250Q250 125 500 135H980Q1240 130 1360 260L1335 350H125Z" fill="url(#t)" opacity=".96"/>
+<path d="M615 42H845L880 130H580Z" fill="#15181b" stroke="#777d82" stroke-width="9"/><rect x="650" y="56" width="160" height="44" rx="4" fill="#909599"/><rect x="672" y="59" width="116" height="37" fill="#24282c"/>
+<path d="M570 140Q610 80 665 78H795Q850 82 890 140L910 285H550Z" fill="#15181b" stroke="#41474c" stroke-width="14"/>
+<rect x="620" y="135" width="220" height="116" rx="24" fill="#050608" stroke="#101316" stroke-width="20"/><rect x="654" y="162" width="152" height="63" rx="8" fill="#3f3155" stroke="#777" stroke-opacity=".35" stroke-width="4"/>
+<rect x="344" y="350" width="742" height="500" rx="28" fill="#111417" stroke="#4f555a" stroke-width="9"/><rect x="382" y="388" width="666" height="424" rx="10" fill="#020405"/>
+<text x="145" y="190" fill="#e5e7e9" font-family="Arial" font-size="38" font-weight="700">PHOTOGRAPHYCOURSES</text><text x="1190" y="930" fill="#d7aa3e" font-family="Arial" font-size="31" font-weight="800">PRO</text>
+<!-- mode dial -->
+<circle cx="235" cy="270" r="96" fill="url(#d)" stroke="#7e8489" stroke-width="10"/><circle cx="235" cy="270" r="72" fill="#202428" stroke="#080a0c" stroke-width="6"/>
+<g fill="#eee" font-family="Arial" font-size="21" font-weight="700" text-anchor="middle"><text x="235" y="207">M</text><text x="280" y="228">Av</text><text x="298" y="274">Tv</text><text x="278" y="320">P</text><text x="235" y="340">B</text><text x="190" y="318">SCN</text><text x="171" y="272">A</text></g><path d="M235 178l-10-20h20z" fill="#d7aa3e"/>
+<!-- power -->
+<text x="350" y="229" fill="#ddd" font-family="Arial" font-size="23">OFF</text><rect x="410" y="203" width="108" height="42" rx="22" fill="#101316" stroke="#747a80" stroke-width="4"/><circle cx="434" cy="224" r="17" fill="#bcc1c4"/><text x="532" y="229" fill="#ddd" font-family="Arial" font-size="23">ON</text>
+<!-- left controls -->
+<g font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">
+<rect x="180" y="403" width="112" height="54" rx="12" fill="url(#d)" stroke="#777" stroke-width="4"/><text x="236" y="438" font-size="22">MENU</text>
+<rect x="180" y="485" width="112" height="54" rx="12" fill="url(#d)" stroke="#777" stroke-width="4"/><text x="236" y="520" font-size="22">INFO</text>
+<circle cx="236" cy="597" r="34" fill="url(#d)" stroke="#777" stroke-width="4"/><text x="236" y="608" font-size="30">▶</text>
+<circle cx="236" cy="696" r="34" fill="url(#d)" stroke="#777" stroke-width="4"/><text x="236" y="707" font-size="28">⌫</text>
+</g>
+<!-- right controls -->
+<g font-family="Arial" font-weight="700" text-anchor="middle" fill="#fff">
+<rect x="1125" y="322" width="110" height="49" rx="12" fill="url(#d)" stroke="#777" stroke-width="4"/><text x="1180" y="354" font-size="21">AF-ON</text>
+<circle cx="1180" cy="435" r="35" fill="url(#d)" stroke="#777" stroke-width="4"/><circle cx="1180" cy="435" r="10" fill="#aaa"/>
+<circle cx="1180" cy="528" r="31" fill="url(#d)" stroke="#777" stroke-width="4"/><text x="1180" y="539" font-size="28">Q</text>
+<circle cx="1180" cy="675" r="105" fill="url(#d)" stroke="#858b90" stroke-width="9"/><circle cx="1180" cy="675" r="77" fill="none" stroke="#aaa" stroke-opacity=".7" stroke-width="15" stroke-dasharray="5 8"/><circle cx="1180" cy="675" r="49" fill="#202428" stroke="#777" stroke-width="6"/><text x="1180" y="685" font-size="24">SET</text>
+<rect x="1110" y="838" width="140" height="57" rx="14" fill="url(#d)" stroke="#777" stroke-width="4"/><circle cx="1140" cy="866" r="9" fill="#d94340"/><text x="1190" y="875" font-size="20">LIVE</text>
+</g>
+<ellipse cx="1248" cy="208" rx="64" ry="32" fill="#9da3a8" stroke="#e4e7e9" stroke-width="6"/><ellipse cx="1248" cy="206" rx="47" ry="21" fill="url(#d)"/>
+<path d="M145 225Q310 125 490 145M1010 150Q1260 155 1328 290" fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="12" stroke-linecap="round"/>
+</svg>
