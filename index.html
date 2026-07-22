@@ -1,120 +1,85 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b0d10">
-  <title>PhotographyCourses Pro Camera — Phase C</title>
-  <link rel="stylesheet" href="./src/styles/app.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PhotographyCourses Pro Camera</title>
+<link rel="stylesheet" href="./src/app.css">
 </head>
 <body>
-<header class="app-header">
-  <div>
-    <strong>PHOTOGRAPHYCOURSES.COM</strong>
-    <span>PRO CAMERA · PHASE C · INTERACTIVE CAMERA</span>
-  </div>
-  <div class="phase-badge">Camera OS online</div>
+<header>
+  <div><strong>PHOTOGRAPHYCOURSES.COM</strong><span>PRO CAMERA · REALISTIC ARTWORK REPLACEMENT</span></div>
+  <em>Phase A</em>
 </header>
 
-<main class="workspace">
-  <aside class="panel">
-    <h2>Camera state</h2>
+<main>
+  <aside>
+    <h2>Camera status</h2>
     <dl id="status"></dl>
-    <button id="resetCamera" class="panel-action">Reset camera</button>
+    <button id="reset">Reset camera</button>
   </aside>
 
-  <section class="simulator">
-    <div id="camera" class="camera-shell" aria-label="Interactive rear camera">
-      <img class="camera-body" src="./assets/body/camera-body-composite.png" alt="PhotographyCourses Pro Camera rear body">
+  <section class="stage">
+    <div id="camera" class="camera">
+      <img class="camera-art" src="./assets/camera-realistic.webp" alt="Realistic PhotographyCourses Pro Camera rear view">
 
-      <section id="lcd" class="lcd lcd-off" aria-live="polite">
-        <div id="screenBoot" class="screen boot hidden">
+      <div id="lcd" class="lcd off">
+        <div id="boot" class="screen hidden boot">
           <strong>PHOTOGRAPHYCOURSES</strong>
           <span>PRO CAMERA OS</span>
-          <i></i>
         </div>
 
-        <div id="screenShooting" class="screen shooting hidden">
-          <div class="lcd-status">
-            <b id="lcdMode">M</b>
-            <span id="lcdFocusMode">AF-S</span>
-            <span id="lcdDrive">S</span>
-            <span id="lcdBattery">▮▮▮</span>
-            <span id="lcdFrames">999</span>
+        <div id="shooting" class="screen hidden shooting">
+          <div class="top"><b id="modeRead">M</b><span>AF-S</span><span id="frames">999</span></div>
+          <div class="scene">
+            <div class="mountains"></div>
+            <button id="focus"></button>
           </div>
-          <div class="live-view">
-            <div class="grid-lines"></div>
-            <button id="focusPoint" aria-label="Autofocus point"></button>
-            <div id="focusMessage" class="focus-message">FOCUS</div>
-          </div>
-          <div class="lcd-exposure">
-            <b id="lcdShutter">1/250</b>
-            <b id="lcdAperture">F4.0</b>
-            <span class="meter"><i id="meterNeedle"></i>−3 · −2 · −1 · 0 · +1 · +2 · +3</span>
-            <b id="lcdIso">ISO 100</b>
+          <div class="bottom">
+            <b>1/250</b><b id="apRead">F4</b>
+            <small>−3 · −2 · −1 · 0 · +1 · +2 · +3</small><b>ISO 100</b>
           </div>
         </div>
 
-        <div id="screenMenu" class="screen menu hidden">
-          <nav id="menuTabs"></nav>
+        <div id="menuScreen" class="screen hidden menu">
+          <nav><b>Shooting</b><b>Autofocus</b><b>Playback</b><b>Setup</b></nav>
           <section>
-            <h3 id="menuTitle"></h3>
-            <div id="menuItems"></div>
+            <button>Image quality <span>›</span></button>
+            <button>White balance <span>›</span></button>
+            <button>Picture style <span>›</span></button>
+            <button>Drive mode <span>›</span></button>
           </section>
         </div>
 
-        <div id="screenQuick" class="screen quick hidden"></div>
+        <div id="playback" class="screen hidden playback">No photographs captured yet</div>
+      </div>
 
-        <div id="screenPlayback" class="screen playback hidden">
-          <div id="playbackEmpty">No photographs captured</div>
-          <div id="playbackPhoto" class="hidden">
-            <div class="photo-preview">CAPTURED FRAME</div>
-            <p id="playbackDetails"></p>
-          </div>
-        </div>
-
-        <div id="screenConfirm" class="screen confirm hidden">
-          <p>Delete current photograph?</p>
-          <div><button data-confirm="cancel">Cancel</button><button data-confirm="delete">Delete</button></div>
-        </div>
-      </section>
-
-      <!-- Independent Phase B layers -->
-      <img id="DIAL_MODE" class="control-layer mode-dial" src="./assets/controls/mode-dial.png" alt="" draggable="false">
-      <img id="DIAL_REAR" class="control-layer rear-wheel" src="./assets/controls/rear-wheel.png" alt="" draggable="false">
-      <img id="BTN_SHUTTER" class="control-layer shutter-button" src="./assets/controls/shutter-button.png" alt="" draggable="false">
-      <img id="JOY_FOCUS" class="control-layer joystick" src="./assets/controls/joystick.png" alt="" draggable="false">
-      <img id="BTN_AFON" class="control-layer afon" src="./assets/controls/af-on-button.png" alt="" draggable="false">
-      <img id="BTN_Q" class="control-layer q-button" src="./assets/controls/q-button.png" alt="" draggable="false">
-      <img id="BTN_LIVE" class="control-layer live-button" src="./assets/controls/live-button.png" alt="" draggable="false">
-      <img id="BTN_MENU" class="control-layer menu-button" src="./assets/controls/menu-button.png" alt="" draggable="false">
-      <img id="BTN_INFO" class="control-layer info-button" src="./assets/controls/info-button.png" alt="" draggable="false">
-      <img id="BTN_PLAY" class="control-layer play-button" src="./assets/controls/play-button.png" alt="" draggable="false">
-      <img id="BTN_DELETE" class="control-layer delete-button" src="./assets/controls/delete-button.png" alt="" draggable="false">
-
-      <!-- Invisible hit areas where artwork has no separate control layer -->
-      <button id="SW_POWER" class="hotspot power-switch" aria-label="Power switch"></button>
-      <button id="BTN_SET" class="hotspot set-button" aria-label="Set button"></button>
+      <button id="DIAL_MODE" class="hot mode" aria-label="Mode dial"></button>
+      <button id="SW_POWER" class="hot power" aria-label="Power switch"></button>
+      <button id="BTN_SHUTTER" class="hot shutter" aria-label="Shutter button"></button>
+      <button id="BTN_MENU" class="hot menuBtn" aria-label="Menu"></button>
+      <button id="BTN_INFO" class="hot info" aria-label="Info"></button>
+      <button id="BTN_PLAY" class="hot play" aria-label="Playback"></button>
+      <button id="BTN_DELETE" class="hot del" aria-label="Delete"></button>
+      <button id="BTN_AFON" class="hot afon" aria-label="Autofocus"></button>
+      <button id="JOY_FOCUS" class="hot joy" aria-label="Focus joystick"></button>
+      <button id="BTN_Q" class="hot q" aria-label="Quick menu"></button>
+      <button id="DIAL_REAR" class="hot rear" aria-label="Rear command dial"></button>
+      <button id="BTN_SET" class="hot set" aria-label="Set"></button>
+      <button id="BTN_LIVE" class="hot live" aria-label="Live view"></button>
     </div>
-
-    <div class="instruction-bar">
-      <span><kbd>P</kbd> Power</span>
-      <span><kbd>M</kbd> Mode</span>
-      <span><kbd>←</kbd><kbd>→</kbd> Rear dial</span>
-      <span><kbd>↑</kbd><kbd>↓</kbd> Focus</span>
-      <span><kbd>Space</kbd> Shutter</span>
-      <span><kbd>Esc</kbd> Back</span>
-    </div>
+    <p>Click the controls. Hold <kbd>Shift</kbd> while clicking a dial to rotate backwards.</p>
   </section>
 
-  <aside class="panel">
-    <h2>Current control</h2>
-    <p id="controlHelp">Switch the camera on to begin.</p>
-    <h2>Captured frames</h2>
-    <div id="captureCount" class="capture-count">0</div>
+  <aside>
+    <h2>Keyboard</h2>
+    <p><kbd>P</kbd> Power</p>
+    <p><kbd>M</kbd> Mode</p>
+    <p><kbd>←</kbd><kbd>→</kbd> Aperture</p>
+    <p><kbd>Space</kbd> Shutter</p>
+    <p><kbd>Esc</kbd> Close screen</p>
   </aside>
 </main>
-
-<script type="module" src="./src/main.js"></script>
+<script type="module" src="./src/app.js"></script>
 </body>
 </html>
